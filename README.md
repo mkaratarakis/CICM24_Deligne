@@ -1,7 +1,7 @@
 # A formalization of the statement of Deligne’s Theorem
 
 This archive contains the source code for the paper "A formalisation of the statement of
-Deligne’s Theorem", submitted to [CPP 2024](https://popl24.sigplan.org/home/CPP-2024). 
+Deligne’s Theorem", submitted to [CICM 2024](https://cicm-conference.org/2024/cicm.php?event=&menu=general). 
 
 The code runs over  Lean's version 4.2.0-nightly-2023-09-18 and mathlib's version [c4bd112a7f09](https://github.com/leanprover-community/mathlib4) (Sep 18, 2023).
 
