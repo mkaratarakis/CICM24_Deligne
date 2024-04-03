@@ -100,9 +100,6 @@ noncomputable def AlgEigenvalue {N : ℕ} {k : ℕ} {q : ℕ} (h : Nat.Prime q)
     (hqN : ¬q ∣ N) : AlgebraicClosure ℚ :=
   Exists.choose (EigenvaluesAlgebraic h hqN hf)
 
-theorem ComapNeTopOfAlgebraic (v : ValuationSubring L) (h : v ≠ ⊤)
-    (ha : Algebra.IsAlgebraic K L) : v.comap (algebraMap K L) ≠ ⊤ := sorry
-
 theorem NonnunitPrimesInComap (v : ValuationSubring (AlgebraicClosure ℚ)) (h : v ≠ ⊤) :
     ∃ q : ℕ, Nat.Prime q ∧ ↑q ∈ LocalRing.maximalIdeal (v.comap (algebraMap ℚ (AlgebraicClosure ℚ))) :=
   sorry
