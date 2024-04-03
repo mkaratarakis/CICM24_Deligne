@@ -8,8 +8,6 @@ import Mathlib.NumberTheory.NumberField.Basic
 
 variable (k : Type _) [CommRing k] [TopologicalSpace k] [TopologicalRing k]
 
-instance :  Algebra ℚ (AlgebraicClosure ℚ) := sorry
-
 /-- `galois_rep k` is the type of 2-dimensional Galois representations where `k` is a
 topological ring defined as the continuous monoid homomorphism of the absolute Galois group
 of the rationals to the `GL_2 k`-/
