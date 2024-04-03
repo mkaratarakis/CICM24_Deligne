@@ -108,12 +108,7 @@ noncomputable def q (v : ValuationSubring (AlgebraicClosure ℚ)) (h : v ≠ ⊤
   Exists.choose (NonnunitPrimesInComap v h)
 
 theorem q.isPrime {v : ValuationSubring (AlgebraicClosure ℚ)} (h : v ≠ ⊤) :
-    Nat.Prime (q v h) := by
-  rw [Nat.prime_iff]
-  rw [← Ideal.span_singleton_prime]
-  have : (Ideal.span {q v h}).IsMaximal := by sorry
-  · exact Ideal.IsMaximal.isPrime this
-  sorry
+    Nat.Prime (q v h) := sorry
 
 def ZMod.Unit {N : ℕ} {q : ℕ} (h : Nat.Prime q) (hqN : ¬q ∣ p * N) : (ZMod N)ˣ
     where
