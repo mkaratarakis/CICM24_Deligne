@@ -153,15 +153,7 @@ open ValuationSubring
 
 variable {R}
 
-instance : TopologicalSpace (AlgebraicClosure ℚ_[p]) :=
-  by
-  have : NormedField (AlgebraicClosure ℚ_[p]) := by sorry
-  exact this.toMetricSpace.toPseudoMetricSpace.toUniformSpace.toTopologicalSpace
-
-instance : TopologicalRing (AlgebraicClosure ℚ_[p]) :=
-  by
-  have : NormedField (AlgebraicClosure ℚ_[p]) := sorry
-  sorry
+instance : NormedField (AlgebraicClosure ℚ_[p]) := sorry
 
 /-- Units (ZMod n) →* Units ℂ -/
 noncomputable def DirCharComplex {N : ℕ} (χ : DirChar (AlgebraicClosure ℚ) N) :
@@ -173,8 +165,6 @@ noncomputable def DirCharAlgClosRat {N : ℕ} {p : ℕ} [Fact (Nat.Prime p)]
     (χ : DirChar (AlgebraicClosure ℚ) N) :
     DirChar (AlgebraicClosure ℚ_[p]) N :=
   (Units.map (algClosRatToPAdic p).toMonoidHom).comp χ
-
-instance : IsGalois ℚ (AlgebraicClosure ℚ) := sorry
 
 /-- Deligne's theorem -/
 -- If f is a weight k modular eigenform of level N and character χ, and if p is a prime
