@@ -100,8 +100,6 @@ noncomputable def AlgEigenvalue {N : ℕ} {k : ℕ} {q : ℕ} (h : Nat.Prime q)
     (hqN : ¬q ∣ N) : AlgebraicClosure ℚ :=
   Exists.choose (EigenvaluesAlgebraic h hqN hf)
 
-noncomputable instance : Algebra ℚ (AlgebraicClosure ℚ) := sorry
-
 theorem ComapNeTopOfAlgebraic (v : ValuationSubring L) (h : v ≠ ⊤)
     (ha : Algebra.IsAlgebraic K L) : v.comap (algebraMap K L) ≠ ⊤ := sorry
 
